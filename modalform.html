@@ -1,0 +1,111 @@
+<html>
+<head>
+    
+    <title>modal||form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #main{
+            height: 500px;
+            width: 700px;
+             
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: rgba(0,0,0,.01);
+            box-sizing: border-box;
+            padding-top: 15px;
+            display: none;
+            position: fixed;
+            top: -500px;
+            right: 
+            transition: all ease 3s;
+            
+        }
+        .form{
+            height: 450px;
+            width: 500px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            //background: rgba(0,0,0,.1);
+        }
+        #main h2{
+            font-size: 30px;
+            color: black;
+            font-family: 'times new roman';
+        }
+        .form .input{
+            height: 50px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 25px;
+           
+            
+        }
+        .btn{
+             height: 50px;
+            width: 100%;
+             margin-top: 20px;
+            border-radius: 25px;
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+            background: orangered;
+        }
+        .textarea{
+            height: 100px;
+            width: 100%;
+             margin-top: 20px;
+            border-radius: 25px;
+        }
+        ::placeholder{
+            padding-left: 20px;
+            line-height: 50px;
+            font-size: 18px;
+            color: grey;
+            font-family: 'times new roman';
+        }
+    </style>
+    </head>
+<body>
+    <center>
+    <div id="main">
+    <h2>Enquiry Form</h2>
+        <a href="modalform.html" style="float: right;color: black;font-size: 50px; margin-right: 10px;margin-bottom:500px;text-decoration: none;">x</a>
+    <div class="form">
+        
+        <input type="text" class="input" placeholder="Enter Your Name"><br>
+        <input type="text" class="input" placeholder="Enter Your Email"><br>
+        <input type="text" class="input" placeholder="Enter Your Subject"><br>
+        <textarea class="textarea" placeholder="Enter Your Message"></textarea><br>
+        <button class="btn">Submit Here</button>
+        </div>
+    
+    </div>
+    
+    </center><br><br>
+    <button id="btn"  onclick="modal()">Get Form</button>
+    
+    
+    <script>
+       function modal(){
+           var m  = document.getElementById("main");
+           var btn = document.getElementById("btn")
+           m.style.display="block"
+           m.style.position="fixed"
+           m.style.top="0px"
+           m.style.Transform="rotate()"
+           m.style.transition="all ease 3s"
+           btn.style.display="none"
+       }
+    
+    
+    
+    </script>
+    </body>
+
+
+
+
+</html>
